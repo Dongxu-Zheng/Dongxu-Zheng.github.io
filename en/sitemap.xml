@@ -2,6 +2,22 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
+            <loc>https://dongxu-zheng.github.io/</loc><lastmod>2020-12-22T19:34:55&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
+                        rel="alternate"
+                        hreflang="zh-cn"
+                        href="https://dongxu-zheng.github.io/zh-cn/"
+                        /><xhtml:link
+                        rel="alternate"
+                        hreflang="fr"
+                        href="https://dongxu-zheng.github.io/fr/"
+                        /><xhtml:link
+                    rel="alternate"
+                    hreflang="en"
+                    href="https://dongxu-zheng.github.io/"
+                    /></url><url>
+            <loc>https://dongxu-zheng.github.io/posts/</loc><lastmod>2020-12-22T19:34:55&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://dongxu-zheng.github.io/second_try/</loc><lastmod>2020-12-22T19:34:55&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://dongxu-zheng.github.io/my-first-post/</loc><lastmod>2020-12-22T12:06:02&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://dongxu-zheng.github.io/categories/</loc><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
                         rel="alternate"
                         hreflang="zh-cn"
@@ -14,19 +30,6 @@
                     rel="alternate"
                     hreflang="en"
                     href="https://dongxu-zheng.github.io/categories/"
-                    /></url><url>
-            <loc>https://dongxu-zheng.github.io/</loc><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
-                        rel="alternate"
-                        hreflang="zh-cn"
-                        href="https://dongxu-zheng.github.io/zh-cn/"
-                        /><xhtml:link
-                        rel="alternate"
-                        hreflang="fr"
-                        href="https://dongxu-zheng.github.io/fr/"
-                        /><xhtml:link
-                    rel="alternate"
-                    hreflang="en"
-                    href="https://dongxu-zheng.github.io/"
                     /></url><url>
             <loc>https://dongxu-zheng.github.io/tags/</loc><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
                         rel="alternate"
