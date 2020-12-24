@@ -15,6 +15,28 @@
                     hreflang="fr"
                     href="https://dongxu-zheng.github.io/fr/categories/"
                     /></url><url>
+            <loc>https://dongxu-zheng.github.io/fr/tags/content/</loc><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
+                        rel="alternate"
+                        hreflang="zh-cn"
+                        href="https://dongxu-zheng.github.io/zh-cn/tags/content/"
+                        /><xhtml:link
+                    rel="alternate"
+                    hreflang="fr"
+                    href="https://dongxu-zheng.github.io/fr/tags/content/"
+                    /></url><url>
+            <loc>https://dongxu-zheng.github.io/fr/categories/documentation/</loc><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
+                        rel="alternate"
+                        hreflang="en"
+                        href="https://dongxu-zheng.github.io/categories/documentation/"
+                        /><xhtml:link
+                        rel="alternate"
+                        hreflang="zh-cn"
+                        href="https://dongxu-zheng.github.io/zh-cn/categories/documentation/"
+                        /><xhtml:link
+                    rel="alternate"
+                    hreflang="fr"
+                    href="https://dongxu-zheng.github.io/fr/categories/documentation/"
+                    /></url><url>
             <loc>https://dongxu-zheng.github.io/fr/</loc><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
                         rel="alternate"
                         hreflang="en"

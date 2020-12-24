@@ -32,6 +32,19 @@
                     hreflang="en"
                     href="https://dongxu-zheng.github.io/categories/"
                     /></url><url>
+            <loc>https://dongxu-zheng.github.io/categories/documentation/</loc><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
+                        rel="alternate"
+                        hreflang="zh-cn"
+                        href="https://dongxu-zheng.github.io/zh-cn/categories/documentation/"
+                        /><xhtml:link
+                        rel="alternate"
+                        hreflang="fr"
+                        href="https://dongxu-zheng.github.io/fr/categories/documentation/"
+                        /><xhtml:link
+                    rel="alternate"
+                    hreflang="en"
+                    href="https://dongxu-zheng.github.io/categories/documentation/"
+                    /></url><url>
             <loc>https://dongxu-zheng.github.io/tags/</loc><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
                         rel="alternate"
                         hreflang="zh-cn"
