@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <title>基于Hugo &#43; Github Pages &#43; Netlify搭建LoveIt主题个人博客 - Dongxu&#39;s Blog</title><meta name="Description" content="基于Hugo， Github Pages， Netlify搭建个人博客，并使用LoveIt主题."><meta property="og:title" content="基于Hugo &#43; Github Pages &#43; Netlify搭建LoveIt主题个人博客" />
+<meta property="og:description" content="基于Hugo， Github Pages， Netlify搭建个人博客，并使用LoveIt主题." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://dongxu-zheng.github.io/zh-cn/01_hugo_building/" />
+<meta property="og:image" content="https://dongxu-zheng.github.io/logo.png"/>
+<meta property="article:published_time" content="2020-12-26T13:00:00+02:00" />
+<meta property="article:modified_time" content="2020-12-26T13:00:00+02:00" />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://dongxu-zheng.github.io/logo.png"/>
+
+<meta name="twitter:title" content="基于Hugo &#43; Github Pages &#43; Netlify搭建LoveIt主题个人博客"/>
+<meta name="twitter:description" content="基于Hugo， Github Pages， Netlify搭建个人博客，并使用LoveIt主题."/>
+<meta name="application-name" content="Dongxu&#39;s Blog">
+<meta name="apple-mobile-web-app-title" content="Dongxu&#39;s Blog"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://dongxu-zheng.github.io/zh-cn/01_hugo_building/" /><link rel="prev" href="https://dongxu-zheng.github.io/zh-cn/second_post/" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css"><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "基于Hugo + Github Pages + Netlify搭建LoveIt主题个人博客",
+        "inLanguage": "zh-CN",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/dongxu-zheng.github.io\/zh-cn\/01_hugo_building\/"
+        },"image": ["https:\/\/dongxu-zheng.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Hugo, Github Pages, Netlify, LoveIt, 博客","wordcount":  4073 ,
+        "url": "https:\/\/dongxu-zheng.github.io\/zh-cn\/01_hugo_building\/","datePublished": "2020-12-26T13:00:00+02:00","dateModified": "2020-12-26T13:00:00+02:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+            "@type": "Organization",
+            "name": "xxxx","logo": "https:\/\/dongxu-zheng.github.io\/images\/avatar.png"},"author": {
+                "@type": "Person",
+                "name": "Dongxu"
+            },"description": "基于Hugo， Github Pages， Netlify搭建个人博客，并使用LoveIt主题."
+    }
+    </script></head>
+    <body header-desktop="fixed" header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/zh-cn/" title="Dongxu&#39;s Blog"><span class="header-title-pre"><i class='far fa-kiss-wink-heart fa-fw'></i></span>Dongxu&#39;s Blog</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/zh-cn/posts/"> 所有文章 </a><a class="menu-item" href="/zh-cn/tags/"> 标签 </a><a class="menu-item" href="/zh-cn/categories/"> 分类 </a><a class="menu-item" href="/zh-cn/categories/documentation/"> 文档 </a><a class="menu-item" href="/zh-cn/about/"> 关于 </a><a class="menu-item" href="https://github.com/Dongxu-Zheng" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw'></i>  </a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item language" title="选择语言">简体中文<i class="fas fa-chevron-right fa-fw"></i>
+                        <select class="language-select" id="language-select-desktop" onchange="location = this.value;"><option value="/zh-cn/01_hugo_building/" selected>简体中文</option></select>
+                    </a><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="搜索">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="清空">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                    <i class="fas fa-adjust fa-fw"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/zh-cn/" title="Dongxu&#39;s Blog"><span class="header-title-pre"><i class='far fa-kiss-wink-heart fa-fw'></i></span>Dongxu&#39;s Blog</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="搜索">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="清空">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        取消
+                    </a>
+                </div><a class="menu-item" href="/zh-cn/posts/" title="">所有文章</a><a class="menu-item" href="/zh-cn/tags/" title="">标签</a><a class="menu-item" href="/zh-cn/categories/" title="">分类</a><a class="menu-item" href="/zh-cn/categories/documentation/" title="">文档</a><a class="menu-item" href="/zh-cn/about/" title="">关于</a><a class="menu-item" href="https://github.com/Dongxu-Zheng" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw'></i></a><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                <i class="fas fa-adjust fa-fw"></i>
+            </a><a href="javascript:void(0);" class="menu-item" title="选择语言">简体中文<i class="fas fa-chevron-right fa-fw"></i>
+                    <select class="language-select" onchange="location = this.value;"><option value="/zh-cn/01_hugo_building/" selected>简体中文</option></select>
+                </a></div>
+    </div>
+</header>
+<div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">目录</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animated flipInX">基于Hugo &#43; Github Pages &#43; Netlify搭建LoveIt主题个人博客</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="https://dxzheng.netlify.app/" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>Dongxu</a></span>&nbsp;<span class="post-category">收录于 <a href="/zh-cn/categories/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/"><i class="far fa-folder fa-fw"></i>博客搭建</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2020-12-26">2020-12-26</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 4073 字&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 9 分钟&nbsp;<span id="/zh-cn/01_hugo_building/" class="leancloud_visitors" data-flag-title="基于Hugo &#43; Github Pages &#43; Netlify搭建LoveIt主题个人博客">
+                        <i class="far fa-eye fa-fw"></i>&nbsp;<span class=leancloud-visitors-count></span>&nbsp;次阅读
+                    </span>&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  kept="">
+                <div class="details-summary toc-title">
+                    <span>目录</span>
+                    <span><i class="details-icon fas fa-angle-right"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li>
+          <ul>
+            <li><a href="#step-1-注册github账户并创建仓库">Step 1 注册Github账户并创建仓库</a></li>
+            <li><a href="#step2-安装hugo">Step2 安装Hugo</a></li>
+            <li><a href="#step-4-安装git">Step 4 安装git</a></li>
+            <li><a href="#step-5-使用hugo创建站点">Step 5 使用Hugo创建站点</a></li>
+            <li><a href="#step-6-修改configtoml文件">Step 6 修改config.toml文件</a></li>
+            <li><a href="#step-7-发布新内容">Step 7 发布新内容</a></li>
+            <li><a href="#step-8-将博客内容上传至github">Step 8 将博客内容上传至Github</a></li>
+            <li><a href="#step-9-添加评论功能">Step 9 添加评论功能</a>
+              <ul>
+                <li><a href="#注册leancloud">注册LeanCloud</a></li>
+                <li><a href="#创建应用">创建应用</a></li>
+                <li><a href="#获取app-id-和app-key">获取APP ID 和APP Key</a></li>
+                <li><a href="#设置hugo配置文件开启评论系统">设置Hugo配置文件，开启评论系统</a></li>
+                <li><a href="#设置邮箱提醒评论功能">设置邮箱提醒评论功能</a></li>
+              </ul>
+            </li>
+            <li><a href="#step10-部署到netlify">Step10 部署到Netlify</a></li>
+            <li><a href="#参考文章">参考文章</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><p>这篇文章介绍了如何使用Hugo与Github Pages搭建个人博客，同时部署在Netlify上。</p>
+<p>很早就想搭建一个个人博客用来记录自己的所学所得。趁着假期有时间，读了几十篇教程和文档，终于搭建了自己喜欢的博客。鉴于网上很多教程部分过旧，部分对于新手不够友好。在此记录下我搭建这个博客的过程，纯小白向，毫无压力就可以拥有自己的博客。</p>
+<h4 id="step-1-注册github账户并创建仓库">Step 1 注册Github账户并创建仓库</h4>
+<p>登录<a href="https://github.com/" target="_blank" rel="noopener noreffer">Github</a>网站，点击右上角的<code>Sign Up</code>进行注册</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="01_github_sign_up.png"
+        data-srcset="/zh-cn/01_hugo_building/01_github_sign_up.png, 01_github_sign_up.png 1.5x, /zh-cn/01_hugo_building/01_github_sign_up.png 2x"
+        data-sizes="auto"
+        alt="/zh-cn/01_hugo_building/01_github_sign_up.png"
+        title="/zh-cn/01_hugo_building/01_github_sign_up.png" /></p>
+<p>填上用户名，邮箱地址，密码等相关信息后，点击<code>Create account</code>即可</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="02_github_register.png"
+        data-srcset="/zh-cn/01_hugo_building/02_github_register.png, 02_github_register.png 1.5x, /zh-cn/01_hugo_building/02_github_register.png 2x"
+        data-sizes="auto"
+        alt="/zh-cn/01_hugo_building/02_github_register.png"
+        title="/zh-cn/01_hugo_building/02_github_register.png" /></p>
+<p>登录后，点击<code>Repositories</code>新建一个仓库，<code>Repository name</code>需要与<code>Owner</code>一致，这样Blog的网址就不会多一个层级。需要注意的是仓库的名字必须以github.io结尾，这样Github才能解析该域名。最后仓库的名字格式为<code>Owner name(你自己的用户名).github.io</code>。勾选新建README文件，最后点击创建仓库<code>Create Repository</code>即可。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="03_repository.png"
+        data-srcset="/zh-cn/01_hugo_building/03_repository.png, 03_repository.png 1.5x, /zh-cn/01_hugo_building/03_repository.png 2x"
+        data-sizes="auto"
+        alt="/zh-cn/01_hugo_building/03_repository.png"
+        title="/zh-cn/01_hugo_building/03_repository.png" /></p>
+<p>至此，创建好了用以保存发布博客的仓库后，我们可以开始使用Hugo创建Blog</p>
+<h4 id="step2-安装hugo">Step2 安装Hugo</h4>
+<p>Hugo的安装也很简单，只需要去<a href="https://github.com/gohugoio/hugo/releases" target="_blank" rel="noopener noreffer">Hugo官网</a>下载适合你电脑的安装包，直接解压到你想安装的路径，最后将该路径添加到PATH环境变量即可。建议一步到位，直接安装<code>hugo_extended</code>版本，因为LoveIt主题中有一些Features的实现只有extended版本的Hugo支持。我使用的是Win10系统64bit版本，因此选择<a href="https://github.com/gohugoio/hugo/releases/download/v0.79.1/hugo_extended_0.79.1_Windows-64bit.zip" target="_blank" rel="noopener noreffer">hugo_extended_0.79.1_Windows-64bit.zip</a>即可。其它系统的安装详见<a href="https://gohugo.io/getting-started/installing/" target="_blank" rel="noopener noreffer">Hugo官网介绍</a>，文档都很详细。</p>
+<p>关于如何更改Win10系统的PATH，详见以下步骤：</p>
+<p>双击<code>计算机</code>图标，点击菜单栏的计算机，点击系统属性</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="04_PATH1.png"
+        data-srcset="/zh-cn/01_hugo_building/04_PATH1.png, 04_PATH1.png 1.5x, /zh-cn/01_hugo_building/04_PATH1.png 2x"
+        data-sizes="auto"
+        alt="/zh-cn/01_hugo_building/04_PATH1.png"
+        title="/zh-cn/01_hugo_building/04_PATH1.png" /></p>
+<p>左侧导航栏最下，点击<code>关于(About)</code>，在<code>相关设置(Related settings)</code>中选择<code>系统信息(System info)</code></p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="04_PATH2.png"
+        data-srcset="/zh-cn/01_hugo_building/04_PATH2.png, 04_PATH2.png 1.5x, /zh-cn/01_hugo_building/04_PATH2.png 2x"
+        data-sizes="auto"
+        alt="/zh-cn/01_hugo_building/04_PATH2.png"
+        title="/zh-cn/01_hugo_building/04_PATH2.png" /></p>
+<p>弹出<code>系统(System)</code>页面，点击左侧导航栏中的<code>高级系统设置</code></p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="04_PATH3.png"
+        data-srcset="/zh-cn/01_hugo_building/04_PATH3.png, 04_PATH3.png 1.5x, /zh-cn/01_hugo_building/04_PATH3.png 2x"
+        data-sizes="auto"
+        alt="/zh-cn/01_hugo_building/04_PATH3.png"
+        title="/zh-cn/01_hugo_building/04_PATH3.png" /></p>
+<p>弹出<code>系统属性(System properties)</code>界面，点击<code>环境变量(Environment Variables)</code>打开环境变量设置界面</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="04_PATH4.png"
+        data-srcset="/zh-cn/01_hugo_building/04_PATH4.png, 04_PATH4.png 1.5x, /zh-cn/01_hugo_building/04_PATH4.png 2x"
+        data-sizes="auto"
+        alt="/zh-cn/01_hugo_building/04_PATH4.png"
+        title="/zh-cn/01_hugo_building/04_PATH4.png" /></p>
+<p>选择<code>系统变量(System variables)</code>中的PATH，点击编辑</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="04_PATH5.png"
+        data-srcset="/zh-cn/01_hugo_building/04_PATH5.png, 04_PATH5.png 1.5x, /zh-cn/01_hugo_building/04_PATH5.png 2x"
+        data-sizes="auto"
+        alt="/zh-cn/01_hugo_building/04_PATH5.png"
+        title="/zh-cn/01_hugo_building/04_PATH5.png" /></p>
+<p>点击<code>新建(New)</code>，将Hugo解压的地址添加到环境变量，点击OK即可</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="04_PATH6.png"
+        data-srcset="/zh-cn/01_hugo_building/04_PATH6.png, 04_PATH6.png 1.5x, /zh-cn/01_hugo_building/04_PATH6.png 2x"
+        data-sizes="auto"
+        alt="/zh-cn/01_hugo_building/04_PATH6.png"
+        title="/zh-cn/01_hugo_building/04_PATH6.png" /></p>
+<p>如果想要查看Hugo是否添加到了环境变量中，可以打开cmd窗口，输入path即可查看当前环境变量中所有已添加路径的信息。至此，Hugo的安装已经完成</p>
+<h4 id="step-4-安装git">Step 4 安装git</h4>
+<p>我们需要通过git把本地Hugo建立的文件上传到Github的仓库中，因此需要下载<a href="https://git-scm.com/download/win" target="_blank" rel="noopener noreffer">git</a>，点击链接进入后，选一个符合电脑的git安装包，下载安装即可</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="05_git_install.png"
+        data-srcset="/zh-cn/01_hugo_building/05_git_install.png, 05_git_install.png 1.5x, /zh-cn/01_hugo_building/05_git_install.png 2x"
+        data-sizes="auto"
+        alt="/zh-cn/01_hugo_building/05_git_install.png"
+        title="/zh-cn/01_hugo_building/05_git_install.png" /></p>
+<h4 id="step-5-使用hugo创建站点">Step 5 使用Hugo创建站点</h4>
+<p>关于Hugo创建Blog的教程非常多，Hugo的文档写的也非常详细，如果想深入了解的话，可以自行阅读<a href="https://gohugo.io/getting-started/quick-start/" target="_blank" rel="noopener noreffer">官方文档</a>
+建立新站点的步骤非常简单，首先新建一个文件夹<code>blog_demo</code>，进入该文件夹后，右击空白区域，点击<code>Git Bash Here</code>打开一个终端命令窗口，输入以下命令</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">hugo new site myblog
+</code></pre></div><p>运行成功后，会有以下提示表明站点创建成功</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ hugo new site myblog
+Congratulations! Your new Hugo site is created in D:<span style="color:#ae81ff">\d</span>emo<span style="color:#ae81ff">\b</span>log_demo<span style="color:#ae81ff">\m</span>yblog.
+
+Just a few more steps and you<span style="color:#960050;background-color:#1e0010">&#39;</span>re ready to go:
+
+1. Download a theme into the same-named folder.
+   Choose a theme from https://themes.gohugo.io/ or
+   create your own with the <span style="color:#e6db74">&#34;hugo new theme &lt;THEMENAME&gt;&#34;</span> command.
+2. Perhaps you want to add some content. You can add single files
+   with <span style="color:#e6db74">&#34;hugo new &lt;SECTIONNAME&gt;\&lt;FILENAME&gt;.&lt;FORMAT&gt;&#34;</span>.
+3. Start the built-in live server via <span style="color:#e6db74">&#34;hugo server&#34;</span>.
+
+Visit https://gohugo.io/ <span style="color:#66d9ef">for</span> quickstart guide and full documentation.
+</code></pre></div><p>进入创建好的站点目录内</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cd myblog
+</code></pre></div><p><code>myblog</code>中的目录结构如下：</p>
+<p>├──archetypes # 内容类型，在创建新内容时自动生成内容的配置，其中可以保存文章模板信息
+├── content # 网站内容，Markdown 文件
+├── data
+├── layouts # 网站模版，选择主题后会将主题中的 <code>layouts</code> 文件夹中的内容复制到此文件夹中
+├── static # 包含 CSS、JavaScript、Fonts、media 等，决定网站的外观。选择主题后会将主题中的 <code>ststic</code> 文件夹中的内容复制到此文件夹中
+├── themes # 存放主题文件
+└── config.toml # 网站的配置文件</p>
+<p>创建完站点后，下载主题。Hugo提供了上百个主题供用户选择，我选择了LoveIt，拓展功能比较全面，我也比较喜欢整体的风格。如果想要了解更多主题的信息，可以点击此链接：<a href="https://themes.gohugo.io/" target="_blank" rel="noopener noreffer">Hugo Themes</a></p>
+<p>下面下载LoveIt主题</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git init
+git submodule add https://github.com/dillonzq/LoveIt.git themes/LoveIt
+</code></pre></div><p>为了可以成功的使用该主题，需要进行以下修改</p>
+<p>首先进入<code>myblog\themes\LoveIt\exampleSite</code>目录下，复制<code>config.toml</code>文件，将其粘贴至<code>myblog</code>下以替换原有的<code>config.toml</code>文件，使用notepad++或者其他文本编辑器打开<code>myblog</code>目录下的<code>config.toml</code>文件，修改<code>baseURL</code>，<code>themeDir</code>以及<code>enableGitinfo</code>三行内容如下：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">baseURL <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;https://example.com&#34;</span>   <span style="color:#75715e">## 修改为你的github.io地址，格式为：https://yourusername.github.io</span>
+<span style="color:#75715e"># [en, zh-cn, fr, pl, ...] determines default content language</span>
+<span style="color:#75715e"># [en, zh-cn, fr, pl, ...] 设置默认的语言</span>
+defaultContentLanguage <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;en&#34;</span>
+<span style="color:#75715e"># theme</span>
+<span style="color:#75715e"># 主题</span>
+theme <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;LoveIt&#34;</span>
+<span style="color:#75715e"># themes directory</span>
+<span style="color:#75715e"># 主题目录</span>
+<span style="color:#75715e">#themesDir = &#34;../..&#34; ## 注释掉该行</span>
+
+<span style="color:#75715e"># website title</span>
+<span style="color:#75715e"># 网站标题</span>
+title <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;LoveIt&#34;</span>
+
+<span style="color:#75715e"># whether to use robots.txt</span>
+<span style="color:#75715e"># 是否使用 robots.txt</span>
+enableRobotsTXT <span style="color:#f92672">=</span> true
+<span style="color:#75715e"># whether to use git commit log</span>
+<span style="color:#75715e"># 是否使用 git 信息</span>
+enableGitInfo <span style="color:#f92672">=</span> false <span style="color:#75715e">## 由true改为false</span>
+<span style="color:#75715e"># whether to use emoji code</span>
+<span style="color:#75715e"># 是否使用 emoji 代码</span>
+enableEmoji <span style="color:#f92672">=</span> true
+</code></pre></div><p>修改保存后，在git bash中运行以下代码：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">hugo serve
+</code></pre></div><p>这时Hugo会配置好整个站点，你可以在浏览器打开<code>http://localhost:1313/</code>访问你的博客了。</p>
+<p>如果你想设置自己喜欢的头像，可以使用<a href="https://realfavicongenerator.net/" target="_blank" rel="noopener noreffer">Favicon Generator</a>，点击进入该网站，点击<code>Select your Favicon image</code>上传你的图片</p>
+<p>页面会转换到一个新的界面，可以选择裁剪你上传的图片，然后点击<code>Continue with this picture</code></p>
+<p>转到新的页面，拉至最下方，点击<code>Generate your Favicons and HTML code</code>，最后点击<code>Favicon package</code>下载压缩包，将压缩包解压至<code>myblog\static</code>中，将作为头像的图片重命名为<code>avatar.png</code>即可</p>
+<h4 id="step-6-修改configtoml文件">Step 6 修改config.toml文件</h4>
+<p>LoveIt的配置文件中包含大量信息，该主题的作者对每个部分进行了详细的注释，具体可以参考<a href="https://hugoloveit.com/zh-cn/theme-documentation-basics/" target="_blank" rel="noopener noreffer">LoveIt</a>。</p>
+<p>一般主要修改Header， Footer，以及网站名称，Logo，作者名称，想要展示的联系方式等即可。</p>
+<p>如果想要在小标题前添加图标的话，可以在<a href="https://fontawesome.com/" target="_blank" rel="noopener noreffer">Font Awesome</a>查询免费图标，LoveIt主题内置了FA的所有免费图标，只需要在小标题前面添加相应的html语句即可，例如：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">name <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;XXXX&#39;s Blog&#34;</span>
+<span style="color:#75715e"># you can add extra information before the name (HTML format is supported), such as icons</span>
+<span style="color:#75715e"># 你可以在名称 (允许 HTML 格式) 之前添加其他信息, 例如图标</span>
+pre <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&lt;i class=&#39;far fa-kiss-wink-heart fa-fw&#39;&gt;&lt;/i&gt;&#34;</span>
+</code></pre></div><h4 id="step-7-发布新内容">Step 7 发布新内容</h4>
+<p>使用以下命令创建一篇新的博客：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">hugo new posts/first_post.md
+</code></pre></div><p>创建的内容都保存在posts目录下</p>
+<p>编写博客内容时，需要设置<code>draft:false</code>，否则博客的内容将会以草稿的形式保存，不会正式发布</p>
+<p>但是在改为false后，编译会出错，需要进行以下修改</p>
+<p>进入到<code>themes/loveIt/layouts/partials/function/content.html</code>目录下，打开<code>content.html</code>文件，将原文件修改为以下内容，保存即可：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">{{- $content := .Content -}}
+
+{{- if ne &#34;&#34; $content -}}
+
+{{- if .Ruby -}}
+    {{- $content = partial &#34;function/ruby.html&#34; $content -}}
+{{- end -}}
+
+{{- if .Fraction -}}
+    {{- $content = partial &#34;function/fraction.html&#34; $content -}}
+{{- end -}}
+
+{{- if .Fontawesome -}}
+    {{- $content = partial &#34;function/fontawesome.html&#34; $content -}}
+{{- end -}}
+
+{{- $content = partial &#34;function/checkbox.html&#34; $content -}}
+
+{{- $content = partial &#34;function/escape.html&#34; $content -}}
+{{- end -}}
+
+{{- return $content -}}
+</code></pre></div><h4 id="step-8-将博客内容上传至github">Step 8 将博客内容上传至Github</h4>
+<p>首先在Git Bash运行以下代码：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">hugo
+</code></pre></div><p>该命令用于编译网站的内容，同时生成<code>public</code>文件夹，里面保存了静态网页所需要的所有内容，我们需要把<code>public</code>上传至我们第一步创建的Github仓库中，通过github.io发布博客</p>
+<p>hugo编译完后，运行以下代码：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cd public
+git init
+git add .
+git commit -m <span style="color:#e6db74">&#34;first post&#34;</span>
+git remote add origin https://github.com/yourusername/yourusername.github.io
+git push -u origin master
+</code></pre></div><p>上传完毕后，登录Github，进入已创建好的仓库，查看所有的文件是否已经上传成功。点击<code>Settings</code>，下拉至<code>GitHub Pages</code>，会有提示显示<code>Your site is published at https://yourusername.github.io</code>，该网址即为你博客的网址，点击该网站即可访问你的博客了。</p>
+<h4 id="step-9-添加评论功能">Step 9 添加评论功能</h4>
+<p>LoveIt主题已经内置了常用的几个可以实现评论功能的软件，在此以Valine为例，展示如何开启评论功能。</p>
+<h5 id="注册leancloud">注册LeanCloud</h5>
+<p>开通评论系统，需要使用LeanCloud，推荐使用<a href="https://leancloud.app/" target="_blank" rel="noopener noreffer">LeanCloud国际版</a>，国内版目前无法进行身份验证。</p>
+<p>注册好后，登录账号，验证手机号与邮箱</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="06_cleancloud1.png"
+        data-srcset="/zh-cn/01_hugo_building/06_cleancloud1.png, 06_cleancloud1.png 1.5x, /zh-cn/01_hugo_building/06_cleancloud1.png 2x"
+        data-sizes="auto"
+        alt="/zh-cn/01_hugo_building/06_cleancloud1.png"
+        title="/zh-cn/01_hugo_building/06_cleancloud1.png" /></p>
+<h5 id="创建应用">创建应用</h5>
+<p>点击创建应用按钮，选择开发版，点击设置，安全中心，将博客的域名（github.io）的网址填入并保存</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="06_cleancloud2.png"
+        data-srcset="/zh-cn/01_hugo_building/06_cleancloud2.png, 06_cleancloud2.png 1.5x, /zh-cn/01_hugo_building/06_cleancloud2.png 2x"
+        data-sizes="auto"
+        alt="/zh-cn/01_hugo_building/06_cleancloud2.png"
+        title="/zh-cn/01_hugo_building/06_cleancloud2.png" /></p>
+<h5 id="获取app-id-和app-key">获取APP ID 和APP Key</h5>
+<p>点击应用Keys获取AppID与AppKey</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="06_cleancloud3.png"
+        data-srcset="/zh-cn/01_hugo_building/06_cleancloud3.png, 06_cleancloud3.png 1.5x, /zh-cn/01_hugo_building/06_cleancloud3.png 2x"
+        data-sizes="auto"
+        alt="/zh-cn/01_hugo_building/06_cleancloud3.png"
+        title="/zh-cn/01_hugo_building/06_cleancloud3.png" /></p>
+<h5 id="设置hugo配置文件开启评论系统">设置Hugo配置文件，开启评论系统</h5>
+<p>打开LoveIt的配置文件，启用Valine，填写自己的AppID与AppKey，具体配置如下：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># Valine comment config (https://github.com/xCss/Valine)</span>
+<span style="color:#75715e"># Valine 评论系统设置 (https://github.com/xCss/Valine)</span>
+<span style="color:#f92672">[</span>params.page.comment.valine<span style="color:#f92672">]</span>
+  enable <span style="color:#f92672">=</span> true
+  appId <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;your AppID&#34;</span>
+  appKey <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;your AppKey&#34;</span>
+  placeholder <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Comment&#34;</span>
+  avatar <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;mp&#34;</span>
+  meta<span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&#34;</span>
+  pageSize <span style="color:#f92672">=</span> <span style="color:#ae81ff">10</span>
+  lang <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&#34;</span>
+  visitor <span style="color:#f92672">=</span> true
+  recordIP <span style="color:#f92672">=</span> true
+  highlight <span style="color:#f92672">=</span> true
+  enableQQ <span style="color:#f92672">=</span> false
+  serverURLs <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&#34;</span>
+  <span style="color:#75715e"># emoji data file name, default is &#34;google.yml&#34;</span>
+  <span style="color:#75715e"># (&#34;apple.yml&#34;, &#34;google.yml&#34;, &#34;facebook.yml&#34;, &#34;twitter.yml&#34;)</span>
+  <span style="color:#75715e"># located in &#34;themes/LoveIt/assets/data/emoji/&#34; directory</span>
+  <span style="color:#75715e"># you can store your own data files in the same path under your project:</span>
+  <span style="color:#75715e"># &#34;assets/data/emoji/&#34;</span>
+  <span style="color:#75715e"># emoji 数据文件名称, 默认是 &#34;google.yml&#34;</span>
+  <span style="color:#75715e"># (&#34;apple.yml&#34;, &#34;google.yml&#34;, &#34;facebook.yml&#34;, &#34;twitter.yml&#34;)</span>
+  <span style="color:#75715e"># 位于 &#34;themes/LoveIt/assets/data/emoji/&#34; 目录</span>
+  <span style="color:#75715e"># 可以在你的项目下相同路径存放你自己的数据文件:</span>
+  <span style="color:#75715e"># &#34;assets/data/emoji/&#34;</span>
+  emoji <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;apple.yml&#34;</span>
+</code></pre></div><p>然后重新运行<code>hugo</code>编译网站，重复之前的步骤将<code>public</code>文件的东西上传到GitHub，再次打开博客的网址，即可看到Valine的评论系统</p>
+<h5 id="设置邮箱提醒评论功能">设置邮箱提醒评论功能</h5>
+<p>有时候并不能随时刷新博客去看评论，因此我们可以开通邮箱提醒功能，这样就可以得到新的评论的提醒。详情可参考此博客：</p>
+<p><a href="https://lanlan2017.github.io/blog/de4f7be8/" target="_blank" rel="noopener noreffer">Hexo Next主题 添加Valine评论系统 设置有新评论时自动发邮件提醒</a></p>
+<p><em>注意：需要前往https://github.com/DesertsP/Valine-Admin进行fork才能成功</em></p>
+<p>完成上述步骤后，我们就成功建立了一个个人博客，每次发布新文章的时候，可能操作起来比较麻烦，可以使用以下脚本见过该过程，在<code>public</code>目录下建立以下文件，之后创建完新的文章后，只需要先使用<code>hugo</code>进行编译，然后运行该脚本即可</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#!/bin/bash
+</span><span style="color:#75715e"></span>
+echo -e <span style="color:#e6db74">&#34;\033[0;32mDeploying updates to GitHub...\033[0m&#34;</span>
+
+<span style="color:#75715e"># build the project</span>
+
+hugo
+
+git add .
+
+msg<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;rebuilding site `date`&#34;</span>
+
+<span style="color:#66d9ef">if</span> <span style="color:#f92672">[</span> $# -eq <span style="color:#ae81ff">1</span> <span style="color:#f92672">]</span>
+
+  <span style="color:#66d9ef">then</span> msg<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span>$1<span style="color:#e6db74">&#34;</span>
+
+<span style="color:#66d9ef">fi</span>
+
+git commit -m <span style="color:#e6db74">&#34;</span>$msg<span style="color:#e6db74">&#34;</span>
+
+<span style="color:#75715e"># push source to github</span>
+
+git push origin master:master
+</code></pre></div><h4 id="step10-部署到netlify">Step10 部署到Netlify</h4>
+<p>待续&hellip;</p>
+<h4 id="参考文章">参考文章</h4>
+<p><a href="https://gohugo.io/">https://gohugo.io/</a></p>
+<p><a href="https://themes.gohugo.io/">https://themes.gohugo.io/</a></p>
+<p><a href="https://hugoloveit.com/zh-cn/theme-documentation-basics/#site-configuration">https://hugoloveit.com/zh-cn/theme-documentation-basics/#site-configuration</a></p>
+<p><a href="https://zhuanlan.zhihu.com/p/262906525">https://zhuanlan.zhihu.com/p/262906525</a></p>
+<p><a href="https://mogeko.me/2018/025/">https://mogeko.me/2018/025/</a></p>
+<p><a href="https://hts0000.github.io/2020/02/%E5%9F%BA%E4%BA%8Ehugo%E5%BF%AB%E9%80%9F%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/">https://hts0000.github.io/2020/02/%E5%9F%BA%E4%BA%8Ehugo%E5%BF%AB%E9%80%9F%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</a></p>
+<p><a href="https://baowei.life/loveittheme/">https://baowei.life/loveittheme/</a></p>
+<p><a href="https://baowei.life/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/">https://baowei.life/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/</a></p>
+<p><a href="https://www.ethanzhang.xyz/%E9%AB%98%E8%B4%A8%E9%87%8Floveit%E4%B8%BB%E9%A2%98-%E9%9D%99%E6%80%81hugo%E5%B9%B3%E5%8F%B0-nginx%E8%87%AA%E5%8A%A8%E5%8F%91%E5%B8%83-%E8%85%BE%E8%AE%AF%E5%85%8D%E8%B4%B9tls%E8%AF%81%E4%B9%A6%E7%9A%84%E9%83%A8%E7%BD%B2%E6%95%99%E7%A8%8B/">https://www.ethanzhang.xyz/%E9%AB%98%E8%B4%A8%E9%87%8Floveit%E4%B8%BB%E9%A2%98-%E9%9D%99%E6%80%81hugo%E5%B9%B3%E5%8F%B0-nginx%E8%87%AA%E5%8A%A8%E5%8F%91%E5%B8%83-%E8%85%BE%E8%AE%AF%E5%85%8D%E8%B4%B9tls%E8%AF%81%E4%B9%A6%E7%9A%84%E9%83%A8%E7%BD%B2%E6%95%99%E7%A8%8B/</a></p>
+<p><a href="https://kuang.netlify.app/blog/hugo.html">https://kuang.netlify.app/blog/hugo.html</a></p>
+<p><a href="https://lanlan2017.github.io/blog/de4f7be8/">https://lanlan2017.github.io/blog/de4f7be8/</a></p>
+<p><a href="https://blog.51cto.com/13284080/2065376">https://blog.51cto.com/13284080/2065376</a></p>
+<p><a href="https://deserts.io/valine-admin-document/">https://deserts.io/valine-admin-document/</a></p>
+<p><a href="https://cloud.tencent.com/developer/article/1633599">https://cloud.tencent.com/developer/article/1633599</a></p>
+<p><a href="https://kuleyu.github.io/hexolog/post/31808.html">https://kuleyu.github.io/hexolog/post/31808.html</a></p>
+<p><a href="https://fontawesome.com/">https://fontawesome.com/</a></p>
+<p><a href="https://realfavicongenerator.net/">https://realfavicongenerator.net/</a></p></div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>更新于 2020-12-26</span>
+            </div>
+            <div class="post-info-license"></div>
+        </div>
+        <div class="post-info-line">
+            <div class="post-info-md"><span>
+                            <a class="link-to-markdown" href="/zh-cn/01_hugo_building/index.md" target="_blank">阅读原始文档</a>
+                        </span></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="分享到 Twitter" data-sharer="twitter" data-url="https://dongxu-zheng.github.io/zh-cn/01_hugo_building/" data-title="基于Hugo &#43; Github Pages &#43; Netlify搭建LoveIt主题个人博客" data-via="https://twitter.com/DongxuZheng?s=09" data-hashtags="Hugo,Github Pages,Netlify,LoveIt,博客"><i class="fab fa-twitter fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Facebook" data-sharer="facebook" data-url="https://dongxu-zheng.github.io/zh-cn/01_hugo_building/" data-hashtag="Hugo"><i class="fab fa-facebook-square fa-fw"></i></a><a href="javascript:void(0);" title="分享到 WhatsApp" data-sharer="whatsapp" data-url="https://dongxu-zheng.github.io/zh-cn/01_hugo_building/" data-title="基于Hugo &#43; Github Pages &#43; Netlify搭建LoveIt主题个人博客" data-web><i class="fab fa-whatsapp fa-fw"></i></a><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="https://dongxu-zheng.github.io/zh-cn/01_hugo_building/" data-title="基于Hugo &#43; Github Pages &#43; Netlify搭建LoveIt主题个人博客"><i class="fab fa-weibo fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Trello" data-sharer="trello" data-url="https://dongxu-zheng.github.io/zh-cn/01_hugo_building/" data-title="基于Hugo &#43; Github Pages &#43; Netlify搭建LoveIt主题个人博客" data-description="基于Hugo， Github Pages， Netlify搭建个人博客，并使用LoveIt主题."><i class="fab fa-trello fa-fw"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/zh-cn/tags/hugo/">Hugo</a>,&nbsp;<a href="/zh-cn/tags/github-pages/">Github Pages</a>,&nbsp;<a href="/zh-cn/tags/netlify/">Netlify</a>,&nbsp;<a href="/zh-cn/tags/loveit/">LoveIt</a>,&nbsp;<a href="/zh-cn/tags/%E5%8D%9A%E5%AE%A2/">博客</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/zh-cn/">主页</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/zh-cn/second_post/" class="prev" rel="prev" title="Sixth"><i class="fas fa-angle-left fa-fw"></i>Sixth</a></div>
+</div>
+<div id="comments"><div id="valine" class="comment"></div><noscript>
+                Please enable JavaScript to view the comments powered by <a href="https://valine.js.org/">Valine</a>.
+            </noscript></div></article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">由 <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.79.1">Hugo</a> 强力驱动 | 主题 - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
+                </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2020</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="https://dxzheng.netlify.app/" target="_blank">Dongxu</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="回到顶部">
+                <i class="fas fa-arrow-up fa-fw"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="查看评论">
+                <i class="fas fa-comment fa-fw"></i>
+            </a>
+        </div><link rel="stylesheet" href="/lib/valine/valine.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery.js@1.2.0/dist/css/lightgallery.min.css"><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/smooth-scroll@16.1.3/dist/smooth-scroll.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/autocomplete.js@0.37.1/dist/autocomplete.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/algoliasearch@4.2.0/dist/algoliasearch-lite.umd.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.2.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lightgallery.js@1.2.0/dist/js/lightgallery.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lg-thumbnail.js@1.2.0/dist/lg-thumbnail.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lg-zoom.js@1.2.0/dist/lg-zoom.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.4.0/sharer.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"复制到剪贴板","maxShownLines":10},"comment":{"valine":{"appId":"mnjvrt3OpEjRvnkiC53WTSWX-MdYXbMMI","appKey":"EAlPjY0Wy7sKV88IxWi84sGb","avatar":"mp","el":"#valine","emojiCDN":"https://cdn.jsdelivr.net/npm/emoji-datasource-apple@5.0.1/img/apple/64/","emojiMaps":{"100":"1f4af.png","alien":"1f47d.png","anger":"1f4a2.png","angry":"1f620.png","anguished":"1f627.png","astonished":"1f632.png","black_heart":"1f5a4.png","blue_heart":"1f499.png","blush":"1f60a.png","bomb":"1f4a3.png","boom":"1f4a5.png","broken_heart":"1f494.png","brown_heart":"1f90e.png","clown_face":"1f921.png","cold_face":"1f976.png","cold_sweat":"1f630.png","confounded":"1f616.png","confused":"1f615.png","cry":"1f622.png","crying_cat_face":"1f63f.png","cupid":"1f498.png","dash":"1f4a8.png","disappointed":"1f61e.png","disappointed_relieved":"1f625.png","dizzy":"1f4ab.png","dizzy_face":"1f635.png","drooling_face":"1f924.png","exploding_head":"1f92f.png","expressionless":"1f611.png","face_vomiting":"1f92e.png","face_with_cowboy_hat":"1f920.png","face_with_hand_over_mouth":"1f92d.png","face_with_head_bandage":"1f915.png","face_with_monocle":"1f9d0.png","face_with_raised_eyebrow":"1f928.png","face_with_rolling_eyes":"1f644.png","face_with_symbols_on_mouth":"1f92c.png","face_with_thermometer":"1f912.png","fearful":"1f628.png","flushed":"1f633.png","frowning":"1f626.png","ghost":"1f47b.png","gift_heart":"1f49d.png","green_heart":"1f49a.png","grimacing":"1f62c.png","grin":"1f601.png","grinning":"1f600.png","hankey":"1f4a9.png","hear_no_evil":"1f649.png","heart":"2764-fe0f.png","heart_decoration":"1f49f.png","heart_eyes":"1f60d.png","heart_eyes_cat":"1f63b.png","heartbeat":"1f493.png","heartpulse":"1f497.png","heavy_heart_exclamation_mark_ornament":"2763-fe0f.png","hole":"1f573-fe0f.png","hot_face":"1f975.png","hugging_face":"1f917.png","hushed":"1f62f.png","imp":"1f47f.png","innocent":"1f607.png","japanese_goblin":"1f47a.png","japanese_ogre":"1f479.png","joy":"1f602.png","joy_cat":"1f639.png","kiss":"1f48b.png","kissing":"1f617.png","kissing_cat":"1f63d.png","kissing_closed_eyes":"1f61a.png","kissing_heart":"1f618.png","kissing_smiling_eyes":"1f619.png","laughing":"1f606.png","left_speech_bubble":"1f5e8-fe0f.png","love_letter":"1f48c.png","lying_face":"1f925.png","mask":"1f637.png","money_mouth_face":"1f911.png","nauseated_face":"1f922.png","nerd_face":"1f913.png","neutral_face":"1f610.png","no_mouth":"1f636.png","open_mouth":"1f62e.png","orange_heart":"1f9e1.png","partying_face":"1f973.png","pensive":"1f614.png","persevere":"1f623.png","pleading_face":"1f97a.png","pouting_cat":"1f63e.png","purple_heart":"1f49c.png","rage":"1f621.png","relaxed":"263a-fe0f.png","relieved":"1f60c.png","revolving_hearts":"1f49e.png","right_anger_bubble":"1f5ef-fe0f.png","robot_face":"1f916.png","rolling_on_the_floor_laughing":"1f923.png","scream":"1f631.png","scream_cat":"1f640.png","see_no_evil":"1f648.png","shushing_face":"1f92b.png","skull":"1f480.png","skull_and_crossbones":"2620-fe0f.png","sleeping":"1f634.png","sleepy":"1f62a.png","slightly_frowning_face":"1f641.png","slightly_smiling_face":"1f642.png","smile":"1f604.png","smile_cat":"1f638.png","smiley":"1f603.png","smiley_cat":"1f63a.png","smiling_face_with_3_hearts":"1f970.png","smiling_imp":"1f608.png","smirk":"1f60f.png","smirk_cat":"1f63c.png","sneezing_face":"1f927.png","sob":"1f62d.png","space_invader":"1f47e.png","sparkling_heart":"1f496.png","speak_no_evil":"1f64a.png","speech_balloon":"1f4ac.png","star-struck":"1f929.png","stuck_out_tongue":"1f61b.png","stuck_out_tongue_closed_eyes":"1f61d.png","stuck_out_tongue_winking_eye":"1f61c.png","sunglasses":"1f60e.png","sweat":"1f613.png","sweat_drops":"1f4a6.png","sweat_smile":"1f605.png","thinking_face":"1f914.png","thought_balloon":"1f4ad.png","tired_face":"1f62b.png","triumph":"1f624.png","two_hearts":"1f495.png","unamused":"1f612.png","upside_down_face":"1f643.png","weary":"1f629.png","white_frowning_face":"2639-fe0f.png","white_heart":"1f90d.png","wink":"1f609.png","woozy_face":"1f974.png","worried":"1f61f.png","yawning_face":"1f971.png","yellow_heart":"1f49b.png","yum":"1f60b.png","zany_face":"1f92a.png","zipper_mouth_face":"1f910.png","zzz":"1f4a4.png"},"enableQQ":false,"highlight":true,"lang":"zh-cn","pageSize":10,"placeholder":"Comment","recordIP":true,"visitor":true}},"lightGallery":{"actualSize":false,"exThumbImage":"data-thumbnail","hideBarsDelay":2000,"selector":".lightgallery","speed":400,"thumbContHeight":80,"thumbWidth":80,"thumbnail":true},"search":{"algoliaAppID":"PASDMWALPK","algoliaIndex":"index.zh-cn","algoliaSearchKey":"b42948e51daaa93df92381c8e2ac0f93","highlightTag":"em","maxResultLength":10,"noResultsFound":"没有找到结果","snippetLength":50,"type":"algolia"}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>
