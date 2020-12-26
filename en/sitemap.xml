@@ -7,10 +7,6 @@
                         hreflang="zh-cn"
                         href="https://dongxu-zheng.github.io/zh-cn/"
                         /><xhtml:link
-                        rel="alternate"
-                        hreflang="fr"
-                        href="https://dongxu-zheng.github.io/fr/"
-                        /><xhtml:link
                     rel="alternate"
                     hreflang="en"
                     href="https://dongxu-zheng.github.io/"
@@ -28,22 +24,15 @@
                         hreflang="zh-cn"
                         href="https://dongxu-zheng.github.io/zh-cn/categories/"
                         /><xhtml:link
-                        rel="alternate"
-                        hreflang="fr"
-                        href="https://dongxu-zheng.github.io/fr/categories/"
-                        /><xhtml:link
                     rel="alternate"
                     hreflang="en"
                     href="https://dongxu-zheng.github.io/categories/"
                     /></url><url>
+            <loc>https://dongxu-zheng.github.io/tags/content/_index.fr/</loc><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://dongxu-zheng.github.io/categories/documentation/</loc><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
                         rel="alternate"
                         hreflang="zh-cn"
                         href="https://dongxu-zheng.github.io/zh-cn/categories/documentation/"
-                        /><xhtml:link
-                        rel="alternate"
-                        hreflang="fr"
-                        href="https://dongxu-zheng.github.io/fr/categories/documentation/"
                         /><xhtml:link
                     rel="alternate"
                     hreflang="en"
@@ -53,10 +42,6 @@
                         rel="alternate"
                         hreflang="zh-cn"
                         href="https://dongxu-zheng.github.io/zh-cn/tags/"
-                        /><xhtml:link
-                        rel="alternate"
-                        hreflang="fr"
-                        href="https://dongxu-zheng.github.io/fr/tags/"
                         /><xhtml:link
                     rel="alternate"
                     hreflang="en"
