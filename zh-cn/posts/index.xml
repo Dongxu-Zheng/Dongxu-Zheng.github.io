@@ -1,12 +1,10 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>Dongxu&#39;s Blog</title>
-        <link>https://dongxu-zheng.github.io/zh-cn/</link>
-        <description>Dongxu&#39;s github</description>
+        <title>所有文章 - Dongxu&#39;s Blog</title>
+        <link>https://dongxu-zheng.github.io/zh-cn/posts/</link>
+        <description>所有文章 | Dongxu&#39;s Blog</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>dxzheng.issac@gmail.com (Dongxu)</managingEditor>
-            <webMaster>dxzheng.issac@gmail.com (Dongxu)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 25 Dec 2020 11:26:22 &#43;0100</lastBuildDate>
-            <atom:link href="https://dongxu-zheng.github.io/zh-cn/index.xml" rel="self" type="application/rss+xml" />
-        <item>
+            <webMaster>dxzheng.issac@gmail.com (Dongxu)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 25 Dec 2020 11:26:22 &#43;0100</lastBuildDate><atom:link href="https://dongxu-zheng.github.io/zh-cn/posts/" rel="self" type="application/rss+xml" /><item>
     <title>Sixth</title>
     <link>https://dongxu-zheng.github.io/zh-cn/second_post/</link>
     <pubDate>Fri, 25 Dec 2020 11:26:22 &#43;0100</pubDate>
