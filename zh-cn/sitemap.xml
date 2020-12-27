@@ -25,15 +25,7 @@
             <loc>https://dongxu-zheng.github.io/zh-cn/tags/hugo/</loc><lastmod>2020-12-26T13:00:00&#43;02:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://dongxu-zheng.github.io/zh-cn/tags/loveit/</loc><lastmod>2020-12-26T13:00:00&#43;02:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://dongxu-zheng.github.io/zh-cn/tags/netlify/</loc><lastmod>2020-12-26T13:00:00&#43;02:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://dongxu-zheng.github.io/zh-cn/posts/</loc><lastmod>2020-12-26T13:00:00&#43;02:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
-                        rel="alternate"
-                        hreflang="en"
-                        href="https://dongxu-zheng.github.io/posts/"
-                        /><xhtml:link
-                    rel="alternate"
-                    hreflang="zh-cn"
-                    href="https://dongxu-zheng.github.io/zh-cn/posts/"
-                    /></url><url>
+            <loc>https://dongxu-zheng.github.io/zh-cn/posts/</loc><lastmod>2020-12-26T13:00:00&#43;02:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://dongxu-zheng.github.io/zh-cn/tags/</loc><lastmod>2020-12-26T13:00:00&#43;02:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
                         rel="alternate"
                         hreflang="en"
@@ -53,24 +45,6 @@
                     rel="alternate"
                     hreflang="zh-cn"
                     href="https://dongxu-zheng.github.io/zh-cn/about/"
-                    /></url><url>
-            <loc>https://dongxu-zheng.github.io/zh-cn/second_post/</loc><lastmod>2020-12-25T11:26:22&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
-                        rel="alternate"
-                        hreflang="en"
-                        href="https://dongxu-zheng.github.io/second_post/"
-                        /><xhtml:link
-                    rel="alternate"
-                    hreflang="zh-cn"
-                    href="https://dongxu-zheng.github.io/zh-cn/second_post/"
-                    /></url><url>
-            <loc>https://dongxu-zheng.github.io/zh-cn/first_try/</loc><lastmod>2020-12-22T12:06:02&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
-                        rel="alternate"
-                        hreflang="en"
-                        href="https://dongxu-zheng.github.io/first_try/"
-                        /><xhtml:link
-                    rel="alternate"
-                    hreflang="zh-cn"
-                    href="https://dongxu-zheng.github.io/zh-cn/first_try/"
                     /></url><url>
             <loc>https://dongxu-zheng.github.io/zh-cn/tags/content/</loc><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://dongxu-zheng.github.io/zh-cn/tags/installation/</loc><changefreq>weekly</changefreq><priority>0.5</priority></url><url>

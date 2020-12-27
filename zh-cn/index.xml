@@ -13,19 +13,5 @@
     <author>作者</author>
     <guid>https://dongxu-zheng.github.io/zh-cn/01_hugo_building/</guid>
     <description><![CDATA[<p>这篇文章介绍了如何使用Hugo与Github Pages搭建个人博客，同时部署在Netlify上。</p>]]></description>
-</item><item>
-    <title>Sixth</title>
-    <link>https://dongxu-zheng.github.io/zh-cn/second_post/</link>
-    <pubDate>Fri, 25 Dec 2020 11:26:22 &#43;0100</pubDate>
-    <author>作者</author>
-    <guid>https://dongxu-zheng.github.io/zh-cn/second_post/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>My First Post</title>
-    <link>https://dongxu-zheng.github.io/zh-cn/first_try/</link>
-    <pubDate>Tue, 22 Dec 2020 12:06:02 &#43;0100</pubDate>
-    <author>作者</author>
-    <guid>https://dongxu-zheng.github.io/zh-cn/first_try/</guid>
-    <description><![CDATA[]]></description>
 </item></channel>
 </rss>
